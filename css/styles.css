@@ -1,0 +1,98 @@
+/* font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* orange: #FFB46F
+ice blue: #F3FAFF
+light blue: #A2D2FF
+midnight: #0A2279
+dk grey: #333333
+lt grey: #737373 */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    color: #333333;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    min-width: 100vw;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    z-index: 1100;
+    background-color: aquamarine;
+}
+
+/* NAVBAR */
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+.menu ul{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.button-container{
+    min-width: 200px;
+    text-align: center;
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+    flex-grow: none;
+}
+
+.navbar-nav{
+    text-align: center;
+}
+
+.nav-item{
+    padding-left: 10px;
+}
+
+.logo{
+    height: 50px;
+}
+
+.navbar-nav .nav-link:hover{
+    color: #FFB46F;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+@media (max-width: 991px){
+    #navbarNav{
+        flex-direction: column;
+    }
+}
+
+/* FIRST */
+#first{
+    /* background-image: url("../images/bground.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 100%; */
+    display: flex;
+    /* background: linear-gradient(#FFFFFF,#F3FAFF); */
+    height: 200vh;
+    justify-content: space-evenly; 
+    background-color: cornflowerblue;
+    padding: 10vh 0;
+}
+.mockups img{
+    height: 500px;
+}
+
+.first1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px 10px;
+}
