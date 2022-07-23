@@ -1,6 +1,8 @@
 /* font-family: 'Nanum Gothic', sans-serif;
 font-family: 'Nunito', sans-serif;
-font-family: 'Poppins', sans-serif; */
+font-family: 'Poppins', sans-serif;
+font-family: 'Anime Ace', sans-serif;
+ */
 
 /* orange: #FFB46F
 ice blue: #F3FAFF
@@ -23,12 +25,27 @@ body{
     padding: 0;
 }
 
-nav{
-    z-index: 1100;
-    background-color: aquamarine;
+h1{
+    font-family: 'Bungee';
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+p{
+    font-weight: lighter;
 }
 
 /* NAVBAR */
+nav{
+    z-index: 1100;
+    background: white;
+    margin-bottom: 20px 30px;
+}
+
 .menu{
     display: flex;
     justify-content: space-around;
@@ -40,8 +57,16 @@ nav{
 }
 
 .button-container{
-    min-width: 200px;
+    min-width: 150px;
     text-align: center;
+}
+
+.button-container button{
+    border: 1.5px solid #333333;
+    color: black;
+    background-color: #FFB46F;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 
 .navbar-collapse{
@@ -54,11 +79,11 @@ nav{
 }
 
 .nav-item{
-    padding-left: 10px;
+    padding: 8px;
 }
 
 .logo{
-    height: 50px;
+    height: 4rem;
 }
 
 .navbar-nav .nav-link:hover{
@@ -70,29 +95,77 @@ nav{
 @media (max-width: 991px){
     #navbarNav{
         flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .button-container{
+        text-align: center;
+        padding: 0;
+    }
+    .navbar-nav li{
+        padding-bottom: 5px;
+    }
+    .nav-item{
+        padding:0;
+    }
+    .navbar-nav{
+        padding: 0;
     }
 }
 
+
 /* FIRST */
 #first{
-    /* background-image: url("../images/bground.png");
-    background-repeat:no-repeat;
-    background-size:cover;
-    height: 100%; */
     display: flex;
-    /* background: linear-gradient(#FFFFFF,#F3FAFF); */
-    height: 200vh;
-    justify-content: space-evenly; 
-    background-color: cornflowerblue;
+    justify-content: space-around; 
     padding: 10vh 0;
+    margin: 10vh 0 0 0;
 }
+
+.texty{
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.downloads{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .mockups img{
     height: 500px;
 }
 
-.first1{
+.first-text{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 5px 10px;
+    justify-content: center;
+    padding-bottom: 40px;
+    background: white;
 }
+
+.first-text img{
+    height: 50px;
+}
+
+/* LINE */
+.liney{
+    padding: 0 20px;
+    margin: 3rem 3rem;
+    background: #d3d3d3;
+    height: 1px;
+}
+
+
+/* SECOND */
+#second{
+    color: #737373;
+    padding: 2rem;
+}
+
+img{
+    max-width: 100%;
+}
+
